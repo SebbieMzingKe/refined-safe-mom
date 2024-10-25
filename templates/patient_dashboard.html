@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-info">Patient Dashboard</h2>
+                <p class="text-center lead">Welcome to your dashboard, Patient!</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <!-- patient details -->
+            <div class="col-md-6">
+                <div class="card border-info">
+                    <div class="card-header bg-info text-white">Profile Information</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Patient Name</h5>
+                        <p class="card-text">Email: patient@example.com</p>
+                        <p class="card-text">Other details can go here...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- appointments or other info -->
+            <div class="col-md-6">
+                <div class="card border-info">
+                    <div class="card-header bg-info text-white">Appointments</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Upcoming Appointments</h5>
+                        <p class="card-text">You have no upcoming appointments.</p>
+                        <p class="card-text">Other patient-related data can be displayed here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional sections can be added for other patient-specific actions -->
+    </div>
+{% endblock content %}
